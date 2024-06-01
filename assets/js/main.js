@@ -42,6 +42,8 @@
     })
   }
 
+
+
   /**
    * Search bar toggle
    */
