@@ -130,7 +130,7 @@
                             "
                           >
                             Performance Status
-                            <span style="padding-left: 8px">On-Time</span>
+                            <span style="padding-left: 8px">On-Time</span>                           
                           </h6>
                         </div>
                       </div>
@@ -268,7 +268,7 @@
                               },
                             ],
                             chart: {
-                              height: 350,
+                              height: 450,
                               type: "area",
                               toolbar: {
                                 show: false,
@@ -327,43 +327,35 @@
           <!-- Right side columns -->
           <div class="col-lg-12">
             <!-- Recent Activity -->
-            <div class="card">
-              <div class="filter">
-                <a class="icon" href="#" data-bs-toggle="dropdown"
-                  ><i class="bi bi-three-dots"></i
-                ></a>
-                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                  <li class="dropdown-header text-start">
-                    <h6>Filter</h6>
-                  </li>
-
-                  <li><a class="dropdown-item" href="#">Today</a></li>
-                  <li><a class="dropdown-item" href="#">This Month</a></li>
-                  <li><a class="dropdown-item" href="#">This Year</a></li>
-                </ul>
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title">Recent Activity <span>| Today</span></h5>
-
-                <div class="activity">
-                  <div class="activity-item d-flex">
-                    <div class="activite-label">32 min</div>
-                    <i
-                      class="bi bi-circle-fill activity-badge text-success align-self-start"
-                    ></i>
-                    <div class="activity-content">
-                      Quia quae rerum
-                      <a href="#" class="fw-bold text-dark"
-                        >explicabo officiis</a
-                      >
-                      beatae
-                    </div>
-                  </div>
-                  <!-- End activity item-->
+            <div class="card" style="background-color: black;">
+            
+                <div class="row text-center" style="font-size: 14px;display: flex;gap: 15px;justify-content: center;">
+                 <button class="col-xxl-1 col-md-1 p-2" style="color: white;text-align: center;outline: none;background-color: #343434">Back</button>
+                 <div class="col-xxl-2 col-md-2 p-2" style="color: white;background-color: #343434">Journey Status:Completed</div>
+                 <div class="col-xxl-3 col-md-3 p-2" style="color: white;text-align: center;background-color: #343434">Current Route:Pune to Mumbai</div>
+                 <div class="col-xxl-1 col-md-1  p-2" style="color: white;text-align: center;background-color: #343434">icon</div>
+                 <div class="col-xxl-2 col-md-2  p-2" style="color: white;text-align: center;background-color: #343434">
+                  Time:
+                  <script>
+                    function formatTime() {
+                        var now = new Date();
+                        var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+                        return now.toLocaleTimeString('en-US', options);
+                    }
+        
+                    document.write(formatTime());
+                </script>
                 </div>
+                 <div class="col-xxl-2 col-md-2  p-2" style="color: white;text-align: center;background-color: #343434">
+                  <script>
+                    document.write(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+                </script>
+        
+                </div>
+                </div>
+          
+                
               </div>
-            </div>
             <!-- End Recent Activity -->
           </div>
           <!-- End Right side columns -->

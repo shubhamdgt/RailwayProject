@@ -6,8 +6,8 @@
 
 /* scrollbar disable */
 :root {
-  /* scroll-behavior: smooth; */
-  /* overflow: hidden; */
+  scroll-behavior: smooth; 
+   overflow: hidden;
 /* keep screen with fixed size */
   /* width: 1024px; 
   height: 768px; */
