@@ -185,6 +185,34 @@ h6 {
   }
 }
 
+.custom-dropdown-menu {
+ /* Dark background */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: 	#87CEEB;
+}
+
+.custom-dropdown-menu .dropdown-item {
+  border: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  background-color: 	#4169E1;
+  color: white;
+  font-weight: bold;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  color: #0096ff; /* Highlight text on hover */
+}
+
+.custom-dropdown-menu .dropdown-item:focus, 
+.custom-dropdown-menu .dropdown-item.active {
+   /* Darker background when focused or active */
+  color: #0096ff; /* Highlight text */
+}
 /* Light Backgrounds */
 .bg-primary-light {
   background-color: #cfe2ff;
