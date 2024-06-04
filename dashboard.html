@@ -37,6 +37,9 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/dashboard.css" rel="stylesheet" />
+    
+
+    <!-- <link rel="stylesheet" href="./style1.css"> -->
   </head>
 
   <body>
@@ -54,11 +57,13 @@
                       <h5 class="card-title">ENERGY SAVE MODE</h5>
 
                       <div class="d-flex align-items-center">
-                        <div
-                          class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                        <!-- <div
+                          class="card-icon rounded-circle d-flex align-items-center justify-content-center hide-on-small"
                         >
                           <i class="bi bi-speedometer"></i>
-                        </div>
+                        </div> -->
+
+                        
                         <div class="ps-3">
                           <h6 style="font-size: 20px; color: #0096ff">
                             Speed
@@ -101,7 +106,7 @@
                         </div>
                         <div class="ps-3">
                           <h6 style="font-size: 20px; color: #0096ff">
-                            Speed
+                            
                             <span style="padding-left: 2px">50 Kmph</span>
                           </h6>
                         </div>
@@ -118,26 +123,221 @@
                       <h5 class="card-title"></h5>
                       <div class="d-flex align-items-center">
                         <div class="ps-3">
-                          <h6 style="font-size: 20px; color: #4cbb17">
+                          <h6 style="font-size: 20px; color: #0096ff">
                             Actual Arrival Time
                             <span style="padding-left: 10px">16:50</span>
                           </h6>
-                          <h6
-                            style="
-                              font-size: 20px;
-                              margin-top: 20px;
-                              margin-bottom: 3px;
-                              color: #4cbb17;
-                            "
-                          >
+                          <h6 style="
+                                font-size: 20px;
+                                margin-top: 5px;
+                              
+                                color: #0096ff;
+                              ">
                             Performance Status
-                            <span style="padding-left: 8px">On-Time</span>
+                            <span style="padding-left: 8px"> <button type="button" class="btn"
+                                style="color: orange;font-size: 20px;font-weight: bold;" data-bs-toggle="modal"
+                                data-bs-target="#earlyModal1">
+                                Early <i class="bi bi-caret-down-fill" style="color:#0096ff;"></i>
+                              </button></span>
                           </h6>
                         </div>
+                        <!-- early modal1 -->
+                        <!-- <div class="modal fade right-aligned" id="earlyModal" tabindex="-1"
+                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog " style="margin-top: 15%;margin-left: 50%;">
+                            <div class="modal-content" style="background-color: black;">
+                              <div class="modal-header" style="height: 40px;">
+                                <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Performance Summery
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                  style="color: white !important;"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-sm-8 mt-2" style="color: white;margin-right: 25px;height: 40px;">
+                                    Performance Status<p style="color: orange;display: inline;padding-left: 20px;">Early
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-3 mt-2"> <span
+                                      style="height: 25px;width: 50px;justify-content: center;padding-top: 5px;color: #4cbb17;font-weight: bold;">+12
+                                      min</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12" style="color: white;">
+                                    Performance issues<p style="color: orange;display: inline;padding-left: 20px;">Early
+                                      at 12 min</p>
+                                  </div>
+                                </div>
+                                <div class="row mt-2">
+                                  <div class="col-sm-12 mt-2" style="color: white;margin-right: 25px;height: 40px;">
+                                    <p style="color: white;display: inline;padding-left: 170px;">
+                                      Optimized Scheuling
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+                         <!-- early modal2 -->
+                        <div class="modal fade right-aligned" id="earlyModal1" tabindex="-1"
+                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog " style="margin-top: 15%;margin-left: 50%;">
+                            <div class="modal-content" style="background-color: black;">
+                              <div class="modal-header" style="height: 40px;">
+                                <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Performance Summery
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-sm-8 mt-2" style="color: white;margin-right: 25px;height: 40px;">
+                                    Performance Status<p
+                                      style="color: orange;display: inline;padding-left: 20px;font-weight: bold;">Early
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-3 mt-2"> <span class="badge bg-success"
+                                      style="height: 30px;width: 80px;justify-content: center;padding-top: 7px;font-weight: bold;">+12min</span>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12" style="color: white;">
+                                    Performance issues<p
+                                      style="color: orange;display: inline;padding-left: 20px;font-weight: bold;">Early at
+                                      15 min</p>
+                                  </div>
+                                </div>
+                                <div class="row mt-2">
+                                  <div class="col-sm-12 mt-2" style="color: white;margin-right: 25px;height: 40px;">
+                                    Reason
+                                    <p style="color: orange;display: inline;padding-left: 20px;">
+                                    <div class="container" style="display: inline;">
+  
+                                      <select id="reasons" name="reasons" class="ReasonDropdown"
+                                        style="width: 200px;background-color: black;color: white;margin-left: 80px;padding: 5px;font-size: 13px;">
+                                        <option value="" disabled selected>Select Reason</option>
+                                        <option id="Reason" value="track-damage">Optimization Scheduling</option>
+                                        <option id="Reason1" value="signaling-problem">Reason1</option>
+                                        <option id="Reason2" value="signaling-problem">Reason2</option>
+                                        <option id="other" value="other">Other</option>
+                                      </select>
+                                    </div>
+                                    </p>
+                                  </div>
+                                </div>
+  
+                                <div id="other-input-container" class="row mt-2 mb-2" style="display: none;">
+                                  <div class="col-sm-12 mt-2" style="color: white; margin-right: 25px;">
+                                    <label for="other-reason" style="color: white;">Please specify:</label>
+                                    <input type="text" id="other-reason" name="other-reason"
+                                      style="width: 200px; background-color: black; color: white; margin-left: 62px;">
+                                  </div>
+                                </div>
+                                <script>
+                                  document.getElementById('reasons').addEventListener('change', function () {
+                                    var otherInputContainer = document.getElementById('other-input-container');
+                                    if (this.value === 'other') {
+                                      otherInputContainer.style.display = 'block';
+                                    } else {
+                                      otherInputContainer.style.display = 'none';
+                                    }
+                                  });
+                                </script>
+                                <div class="modal-footer" style="height: 35px;">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                    style="margin-top: -5px;">Close</button>
+                                  <button type="button" class="btn btn-primary" style="margin-top: -5px;"
+                                    onclick="saveChanges()"  data-bs-dismiss="modal">Save
+                                    changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                        <!-- late Modal -->
+                        <!-- <div class="modal fade right-aligned" id="lateModal" tabindex="-1"
+                          aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                          <div class="modal-dialog " style="margin-top: 15%;margin-left: 50%;">
+                            <div class="modal-content" style="background-color: black;">
+                              <div class="modal-header" style="height: 40px;">
+                                <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Performance Summery</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close" style="color: white !important;"></button>
+                              </div>
+                              <div class="modal-body">
+                              <div class="row">
+                                <div class="col-sm-8 mt-2" style="color: white;margin-right: 25px;height: 40px;">Performance Status<p style="color: orange;display: inline;padding-left: 20px;font-weight: bold;">Late</p></div>
+                                <div class="col-sm-3 mt-2"> <span class="badge bg-danger" style="height: 25px;width: 50px;justify-content: center;padding-top: 5px;">-185</span></div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-12" style="color: white;">
+                                  Performance issues<p style="color: orange;display: inline;padding-left: 20px;font-weight: bold;">Late at 13 timing Point</p>
+                                </div>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-sm-12 mt-2" style="color: white;margin-right: 25px;height: 40px;">Reason
+                                  <p style="color: orange;display: inline;padding-left: 20px;">
+                                    <div class="container" style="display: inline;">
+                                      
+                                      <select id="reasons" class="reasons" name="reasons" style="width: 200px;background-color: black;color: white;margin-left: 80px;font-size: 13px;padding: 5px;">
+                                        <option value="" disabled selected>Select Reason</option>
+                                        <option id="track-damage" value="track-damage">Track Damage</option>
+                                        <option id="signaling-problem" value="signaling-problem">Signaling Problem</option>
+                                        <option id="security-concern" value="security-concern">Security Concern</option>
+                                        <option id="weather-condition" value="weather-condition">Weather Condition</option>
+                                        <option id="operational-issues" value="operational-issues">Operational Issues</option>
+                                        <option id="unexpected-event" value="unexpected-event">Unexpected Event</option>
+                                        <option id="other" value="other">Other</option>
+                                      </select>
+                                      </div>  
+                                </p>
+                              </div>
+                             </div>
+                             
+                             <div id="other-input-container" class="row mt-2 mb-2" style="display: none;">
+                              <div class="col-sm-12 mt-2" style="color: white; margin-right: 25px;">
+                                <label for="other-reason" style="color: white;">Please specify:</label>
+                                <input type="text" id="other-reason" name="other-reason" style="width: 200px; background-color: black; color: white; margin-left: 62px;">
+                              </div>
+                            </div>
+                            <script>
+                              document.getElementById('reasons').addEventListener('change', function() {
+                                var otherInputContainer = document.getElementById('other-input-container');
+                                if (this.value === 'other') {
+                                  otherInputContainer.style.display = 'block';
+                                } else {
+                                  otherInputContainer.style.display = 'none';
+                                }
+                              });
+                            </script>
+                              <div class="modal-footer" style="height: 35px;">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-top: -5px;">Close</button>
+                                <button type="button" class="btn btn-primary" style="margin-top: -5px;" onclick="saveChanges()"  data-bs-dismiss="modal">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  -->
                       </div>
                     </div>
                   </div>
+                  <div id="snackbar1">Changes Saved Successfully</div>
+                  <script>
+                    function saveChanges() {
+                      var x = document.getElementById("snackbar1");
+                      x.className = "show";
+                      setTimeout(function () {
+                        x.className = x.className.replace("show", "");
+                      }, 3000);
+                    }
+                  </script>
+  
+                  <!-- End  Actual Arrival  Card -->
                 </div>
+
+
+
                 <!-- End  Actual Arrival  Card -->
               </div>
               <!-- Menu Cards -->
@@ -278,79 +478,35 @@
               <!-- End Approaching Destination Card -->
 
               <div class="col-12">
-                <div class="card">
                
-
-                  <div class="card-body bg-white">
                     <!-- Line Chart -->
-                    <div id="reportsChart"></div>
-
-                    <script>
-                      document.addEventListener("DOMContentLoaded", () => {
-                        new ApexCharts(
-                          document.querySelector("#reportsChart"),
-                          {
-                            series: [
-                              {
-                                name: "Current Speed",
-                                data: [11, 32, 45, 32, 34, 52, 41],
-                              },
-                              {
-                                name: "Ideal Speed",
-                                data: [15, 11, 32, 18, 9, 24, 11],
-                              },
-                            ],
-                            chart: {
-                              height: 450,
-                              type: "area",
-                              toolbar: {
-                                show: false,
-                              },
-                            },
-                            markers: {
-                              size: 4,
-                            },
-                            colors: ["#2eca6a", "#ff771d"],
-                            fill: {
-                              type: "gradient",
-                              gradient: {
-                                shadeIntensity: 1,
-                                opacityFrom: 0.3,
-                                opacityTo: 0.4,
-                                stops: [0, 90, 100],
-                              },
-                            },
-                            dataLabels: {
-                              enabled: false,
-                            },
-                            stroke: {
-                              curve: "smooth",
-                              width: 2,
-                            },
-                            xaxis: {
-                              type: "datetime",
-                              categories: [
-                                "2018-09-19T00:00:00.000Z",
-                                "2018-09-19T01:30:00.000Z",
-                                "2018-09-19T02:30:00.000Z",
-                                "2018-09-19T03:30:00.000Z",
-                                "2018-09-19T04:30:00.000Z",
-                                "2018-09-19T05:30:00.000Z",
-                                "2018-09-19T06:30:00.000Z",
-                              ],
-                            },
-                            tooltip: {
-                              x: {
-                                format: "dd/MM/yy HH:mm",
-                              },
-                            },
-                          }
-                        ).render();
-                      });
-                    </script>
+                    <section class="dashboard" id="main-column">
+ 
+                      <div id="sensorValues">
+                        <div class="sensor-values" style="display: flex">
+                          <div class="volts">12.0</div>
+                          <label style="font-size: 15px;">Ideal Speed</label>
+                        </div>
+                       
+                        <div class="sensor-values">
+                          <div class="amps">0.7</div>
+                          <label style="font-size: 15px;">Current Speed</label>
+                        </div>
+                    
+                        <div class="sensor-values">
+                          <div class="volts">12.0</div>
+                          <label style="font-size: 15px;">Remaining Distance</label>
+                        </div>
+                        
+                        <div class="sensor-values">
+                          <div class="moisture">1</div>
+                          <label style="font-size: 15px;">Elevation</label>
+                        </div>
+                      </div>
+                      <div id="sensorData"></div>
+                    </section>
                     <!-- End Line Chart -->
-                  </div>
-                </div>
+               
               </div>
               <!-- End Reports -->
             </div>
@@ -358,7 +514,7 @@
           <!-- End Left side columns -->
 
           <!-- Right side columns -->
-          <div class="col-lg-12">
+          <div class="col-lg-12" style="padding-top: 5px;">
             <!-- Recent Activity -->
             <div
               class="card"
@@ -390,7 +546,7 @@
                   style="color: white; background-color: #343434"
                 >
                   <span class="padding-top: 20px;"
-                    >Journey Status:Completed</span
+                    >Journey : Completed</span
                   >
                 </div>
                 <div
@@ -496,9 +652,10 @@
 
 
     <!-- partial scripts for chart -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/highcharts/4.2.1/highcharts.js'></script>
-  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/4579/darkThemeHighCharts.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highcharts/4.2.1/highcharts.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/4579/darkThemeHighCharts.js'></script><script  src="./script.js"></script>
 
 
     <!-- time script -->

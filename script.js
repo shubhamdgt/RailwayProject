@@ -105,7 +105,7 @@ $(document).ready(function () {
         },
       },
       title: {
-        text: "Live Data",
+        text: "Train Current Status",
       },
       // xAxis: {
       //   type: "datetime",
