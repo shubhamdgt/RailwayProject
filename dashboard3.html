@@ -16,11 +16,18 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css"rel="stylesheet"/>
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"rel="stylesheet"/>
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
     <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
@@ -60,8 +67,7 @@
                         <div class="ps-3">
                           <h6 style="font-size: 20px; color: #0096ff">
                             Speed
-                            <span style="padding-left: 60px" class="engSpeed">50</span>
-                          
+                            <span style="padding-left: 60px">50</span>
                             Kmph
                           </h6>
                           <h6
@@ -73,7 +79,7 @@
                             ;
                           >
                             Distance
-                            <span style="padding-left: 38px" class="engDistance">40</span>
+                            <span style="padding-left: 38px">40</span>
                             Km
                           </h6>
                         </div>
@@ -88,7 +94,7 @@
                   <div class="card info-card revenue-card">
                     <div class="card-body">
                       <h5 class="card-title">Current Speed</h5>
-                      
+
                       <div
                         class="d-flex align-items-center"
                         style="margin-bottom: 11px"
@@ -99,9 +105,9 @@
                           <i class="bi bi-speedometer2"></i>
                         </div>
                         <div class="ps-3">
-                          <h6 style="font-size: 20px; color: #0096ff ;display: flex;">
-                            <div class="amps">0</div>
-                            <span style="padding-left: 2px">Kmph</span>
+                          <h6 style="font-size: 20px; color: #0096ff">
+                            
+                            <span style="padding-left: 2px">50 Kmph</span>
                           </h6>
                         </div>
                       </div>
@@ -128,15 +134,11 @@
                                 color: #0096ff;
                               ">
                             Performance Status
-                            <span style="padding-left: 8px"> 
-
-                              <button type="button" class="btn"  id="checkout-button" name="checkout-button"
-                                style="color: orange;font-size: 20px;font-weight: bold; border-color: transparent;" data-bs-toggle="modal"
+                            <span style="padding-left: 8px"> <button type="button" class="btn"
+                                style="color: orange;font-size: 20px;font-weight: bold;" data-bs-toggle="modal"
                                 data-bs-target="#earlyModal1">
                                 Early <i class="bi bi-caret-down-fill" style="color:#0096ff;"></i>
-                              </button>
-                            
-                            </span>
+                              </button></span>
                           </h6>
                         </div>
                         <!-- early modal1 -->
@@ -417,14 +419,17 @@
                 <div class="card info-card sales-card">
                   <div class="card-body align-items-center">
                     <div style="display: flex; justify-content: center">
-                      <h5 class="card-title" style="font-size: 22px; display: flex;">
-                        Approaching Destination : <div  style="
-                        color: #0096ff;
-                        font-weight: bold;
-                        font-size: 20px ;
-                        padding-left: 10px;
-                      " class="appDestination" > NSDL (50 Km)</div>
-                     
+                      <h5 class="card-title" style="font-size: 22px">
+                        Approaching Destination :
+                        <span
+                          style="
+                            color: #0096ff;
+                            font-weight: bold;
+                            font-size: 20px;
+                          "
+                        >
+                          NSDL (50 Km)</span
+                        >
                       </h5>
                     </div>
                     <div
@@ -442,14 +447,11 @@
                           justify-content: space-between;
                         "
                       >
-                        <h6 style="font-size: 20px; color: #4cbb17; display: flex;">
+                        <h6 style="font-size: 20px; color: #4cbb17">
                           <i class="bi bi-chevron-right"></i> Next Destination:
-
-                          <div  style="padding-left: 10px; color: #0096ff"
-                      " class="nextDestination" >  Half Point</div>
-
-
-                        
+                          <span style="padding-left: 10px; color: #0096ff">
+                            Half Point (120km)</span
+                          >
                         </h6>
                       </div>
 
@@ -461,14 +463,12 @@
                           justify-content: space-between;
                         "
                       >
-                        <h6 style="font-size: 20px; color: #4cbb17; display: flex;">
-                          <i class="bi bi-chevron-double-right"></i>
-                           Next
+                        <h6 style="font-size: 20px; color: #4cbb17">
+                          <i class="bi bi-chevron-double-right"></i> Next
                           Destination:
-                         
-
-                          <div  style="padding-left: 10px; color: #0096ff"
-                       class="next2Destination" >  Next Point</div>
+                          <span style="padding-left: 10px; color: #0096ff"
+                            >LDH (500km)</span
+                          >
                         </h6>
                       </div>
                     </div>
@@ -494,7 +494,7 @@
                         </div>
                     
                         <div class="sensor-values">
-                          <div class="remainingDistance">12</div>
+                          <div class="volts">12.0</div>
                           <label style="font-size: 15px;">Remaining Distance</label>
                         </div>
                         
@@ -544,9 +544,9 @@
                 <div
                   class="col-xxl-2 col-md-2 p-2"
                   style="color: white; background-color: #343434"
-                >Journey :
-                  <span style="padding-top: 20px;" class="journeyStatus"
-                    >Completed </span
+                >
+                  <span class="padding-top: 20px;"
+                    >Journey : Completed</span
                   >
                 </div>
                 <div
